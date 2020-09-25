@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+}
+body {
+    background: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input {
+    width: 328px;
+    height: 56px;
+    margin-top: 16px;
+    border-radius: 5px;
+    background: #FFF;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+img {
+    width: 160px;
+    margin: 0 auto;
+}
+#newCadUser{
+    border: 1px solid red;
+    padding: 30px;
+    width: 780px;
+}
+input {
+    width: 328px;
+    height: auto;
+    margin-top: 16px;
+    border-radius: 5px;
+    background: #FFF;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin: 10px;
+}
+form img {
+    width: 160px;
+    margin: 0 auto;
+}
+
+button {
+    margin: 10px;
+}
+form #voltar {
+    width: 331px;
+    height: 48px;
+    background: #6202EE;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+form #voltar:hover {
+    transition: 0.5s;
+    background: #812eff;
+    box-shadow: black 2px 2px 10px;
+}
+form #cad {
+    width: 331px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 15px;
+    cursor: pointer;
+}
+form #cad:hover {
+    transition: 0.5s;
+    box-shadow: black 2px 2px 10px;
+    border: 1px solid #dddddd;
+    color: #dddddd;
+}
