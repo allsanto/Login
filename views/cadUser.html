@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/styles/cad.css">
+    <link rel="stylesheet" href="/public/styles/main.css">
     <title>Cadastro</title>
 </head>
 
@@ -12,24 +13,34 @@
     <div id="container">
         <img src="/images/icone.png" alt="Icone">
         <h1>Novo Cadastro</h1>
-                <form id="newCadUser" action="">
-                    <input name="nome" type="text" id="nome" placeholder="Nome">
-                    <input name="sobnome" type="text" id="sobnome" placeholder="Sobrenome">
-                    <input name="infEmail" type="email" id="text" placeholder="Informe seu E-mail">
-                    <input name="confEmail" type="email" id="text" placeholder="Confirme seu E-mail">
-                    <input name="infSenha" type="password" id="infSenha" placeholder="Informe sua Senha">
-                    <input name="confSenha" type="password" id="confSenha" placeholder="Confirme sua Senha">
+        <form id="newCadUser" action="">
+            <input name="nome" type="text" id="nome" placeholder="Nome">
+            <input name="sobnome" type="text" id="sobnome" placeholder="Sobrenome">
+            <input name="infEmail" type="email" id="text" placeholder="Informe seu E-mail">
+            <input name="confEmail" type="email" id="text" placeholder="Confirme seu E-mail">
+            <input name="infSenha" type="password" id="infSenha" placeholder="Informe sua Senha">
+            <input name="confSenha" type="password" id="confSenha" placeholder="Confirme sua Senha">
 
-                    <h2>Você se considera?</h2>
-                    <input type="radio" id="male" name="gender" value="homem">
-                    <label for="male">Homem</label><br>
-                    <input type="radio" id="female" name="gender" value="mulher">
-                    <label for="female">Mulher</label><br>
-                    <input type="radio" id="other" name="tipo" value="outros">
-                    <label for="other">Não binário</label>
+            <div id="checlBox">
+                <h1>Você se considera?</h1>
+                <label for="accessible">
+                  <input type="radio" value="accessible" name="quality" id="accessible"> 
+                  <span>Homem</span>
+                </label>
+              
+                <label for="pretty">
+                  <input type="radio" value="pretty" name="quality" id="pretty"> 
+                  <span>Mulher</span>
+                </label>
+              
+                <label for="accessible-and-pretty">
+                  <input type="radio" value="pretty"  name="quality" id="accessible-and-pretty" checked> 
+                  <span>Não binário</span>
+                </label>
+            </div>
 
-                    <button id="voltar">VOLTAR</button>
-                    <button id="cad">CADASTRAR</button>
+            <button id="voltar">VOLTAR</button>
+            <button id="cad">CADASTRAR</button>
         </form>
     </div>
 </body>
