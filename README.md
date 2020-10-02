@@ -1,2 +1,2 @@
 # Login
-Uma tela de Login com tela de cadastro, editar, excluir e lista.
+A Login screen with a registration, edit, delete and list screen.
