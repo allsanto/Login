@@ -9,6 +9,7 @@
 	transform: translate(-50%, -50%);
 }
 .contTabs img {
+    top: 0;
     width: 160px;
     margin: 50px 0;
 }
@@ -18,7 +19,7 @@
     margin: 25px 0;
 }
 table {
-	width: 1250px;
+	min-width: 840px;
 	border-collapse: collapse;
 	overflow: hidden;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -48,12 +49,29 @@ input[type='checkbox'] {
     width: 18px;
     height: 18px;
 }
+#icon {
+    margin-right: 0;
+}
+#icon img {
+    width: 14px;
+    height: 18px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+#icon img:hover {
+    transition: 1s;
+    opacity: 60%;
+    box-shadow: 1 2 3 4 red;
+}
+
 /* --------------------------------------- */
- #entrar {
+.bt {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 331px;
+    justify-content: flex-end;
+
+}
+.bt #new {
+    width: 182px;
     height: 48px;
     background: #6202EE;
     border-radius: 5px;
@@ -62,17 +80,16 @@ input[type='checkbox'] {
     font-size: 16px;
     color: #FFFFFF;
     cursor: pointer;
+    outline:none
 }
- #entrar:hover {
+.bt #new:hover {
     transition: 0.5s;
     background: #812eff;
     box-shadow: black 2px 2px 10px;
+    outline:none
 }
- #newCad {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 331px;
+.bt #rollback {
+    width: 182px;
     height: 48px;
     font-weight: 500;
     font-size: 16px;
@@ -81,12 +98,15 @@ input[type='checkbox'] {
     border: 1px solid #FFFFFF;
     font-size: 16px;
     color: #FFFFFF;
+    margin-right: 20px;
     margin-top: 15px;
     cursor: pointer;
+    outline:none
 }
- #newCad:hover {
+.bt #rollback:hover {
     transition: 0.5s;
     box-shadow: black 2px 2px 10px;
     border: 1px solid #dddddd;
     color: #dddddd;
+    outline:none
 }

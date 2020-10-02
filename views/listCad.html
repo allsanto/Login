@@ -2,55 +2,79 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/styles/main.css">
-    <link rel="stylesheet" href="/public/styles/styleListCad.css">
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/styles/main.css">
+  <link rel="stylesheet" href="/public/styles/styleListCad.css">
+  <title>Login</title>
 </head>
 
 <body>
-    <div id="container">
-        <div class="contTabs">
-            <img src="/images/icone.png" alt="Icone">
-            <h1>Lista de funcinonários</h1>
-            <div class="tabDados">
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Email</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><input type='checkbox' class='select' /></td>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
-                      </tr>
-                      <tr>
-                        <td><input type='checkbox' class='select' /></td>        
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@example.com</td>
-                      </tr>
-                      <tr>
-                        <td><input type='checkbox' class='select' /></td>        
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@example.com</td>
-                      </tr>
-                    </tbody>
-                  </table>
+  <div id="container">
+    <div class="contTabs">
+      <a href="index.html">
+        <img src="/images/icone.png" alt="Icone">
+      </a>
+      <h1>Lista de funcinonários</h1>
+      <div class="tabDados">
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Nome</th>
+              <th>Setor</th>
+              <th>Email</th>
+              <th>Cargo</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type='checkbox' class='select' /></td>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+              <td>Doe</td>
+              <td id="icon">
+                <img src="../images/edit.png" alt="editar">
+                <img src="../images/clear.png" alt="apagar">
+              </td>
+            </tr>
+            <tr>
+              <td><input type='checkbox' class='select' /></td>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+              <td>Doe</td>
+              <td id="icon">
+                <img src="../images/edit.png" alt="editar">
+                <img src="../images/clear.png" alt="apagar">
+              </td>
+            </tr>
+            <tr>
+              <td><input type='checkbox' class='select' /></td>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+              <td>Doe</td>
+              <td id="icon">
+                <img src="../images/edit.png" alt="editar">
+                <img src="../images/clear.png" alt="apagar">
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-                <button id="entrar">ENTRAR</button>
-                <button id="newCad">QUERO ME CADASTRAR</button>
-            </div>
+        <div class="bt">
+          <button id="rollback">Voltar</button>
+          <button id="new">Novo</button>
         </div>
+
+      </div>
     </div>
+  </div>
+
+  <script src="scrip/script.js" ></script>
 </body>
 
 </html>
